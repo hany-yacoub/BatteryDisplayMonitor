@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "batt.h"
+#include "battery.h"
 //                         3210
 #define VOLTAGE_FLAG 0b01111001     // bit 2 is 0 but others may be set
 #define PERCENT_FLAG 0b10010101     // bit 2 is 1 but others may be set

@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "batt.h"
+#include "battery.h"
 #include <stdint.h>
 
 #define BATT_MAX_BITS 30
