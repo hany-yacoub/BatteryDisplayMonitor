@@ -6,8 +6,8 @@ A hardware driver for an embedded battery level display switching between two ba
 
 ### Dependencies
 
-GCC
-Make  
+GCC  
+Makefile  
 
 ### Compiling
 
