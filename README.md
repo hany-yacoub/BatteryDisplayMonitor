@@ -13,7 +13,7 @@ Make
 
 Use command "make" to compile 
 
-#### Compatibility
+### Compatibility
 
 Unlikely to be compatible for your specific use, but C version is easily modified and somewhat modular. Includes simulator for testing.
 
