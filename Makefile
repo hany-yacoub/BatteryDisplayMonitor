@@ -6,7 +6,7 @@ SHELL  = /bin/bash
 CWD    = $(shell pwd | sed 's/.*\///g')
 
 PROGRAMS = \
-	batt_main \
+	main \
 
 TESTPROGRAMS = \
 	hybrid_main \
@@ -30,21 +30,17 @@ help :
 # battery problem
 
 # build .o files from corresponding .c files
-%.o : %.c batt.h
+%.o : %.c battery.h
 	$(CC) -c $<
 
 # build assembly object via gcc + debug flags
-batt_update_asm.o : batt_update_asm.s batt.h
+update_asm.o : update_asm.s battery.h
 	$(CC) -c $<
 
-batt_main : batt_main.o batt_sim.o batt_update_asm.o 
-	$(CC) -o $@ $^
-
-# batt_update functions testing program
-test_batt_update : test_batt_update.o batt_sim.o batt_update_asm.o
+main : main.o simulate.o update_asm.o 
 	$(CC) -o $@ $^
 
 # uses both assmebly and C update functions for incremental testing
-hybrid_main : batt_main.o batt_sim.o batt_update_asm.o batt_update.o
+hybrid_main : main.o simulate.o update_asm.o update.o
 	$(CC) -o $@ $^
 
