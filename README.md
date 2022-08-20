@@ -1,4 +1,4 @@
-# BattDisp-Driver
+# BatteryDisplayMonitor
 
 ## Description
 
