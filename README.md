@@ -2,7 +2,7 @@
 
 ## Description
 
-A battery level monitor switching between two battery modes: voltage and percent. Has input error reporting.
+A battery level monitor switching between two battery modes: voltage and percent. Includes simulator and input error reporting.
 
 ### Dependencies
 
